@@ -113,14 +113,22 @@ def to_ascii(img, width, invert):
     return "\n".join(lines) + "\n"
 
 
-def to_braille(img, width, invert):
+def to_braille(img, width, invert, edges=False):
     """Braille characters give a 2x4 dot grid per character cell — much
     finer detail than one-char-per-pixel ASCII. Dots are set for dark
     pixels by default; --invert sets them for bright pixels instead
-    (use it when the text is displayed light-on-dark)."""
+    (use it when the text is displayed light-on-dark).
+
+    edges=True dots the luminance edges instead of the shading, producing
+    an outline sketch that reads correctly on BOTH light and dark
+    backgrounds (dark pen strokes vs. glowing neon strokes)."""
     rows = max(1, round(img.height * width / img.width / 2))
     gray = prep_gray(img).resize((width * 2, rows * 4), Image.Resampling.LANCZOS)
-    if invert:
+    if edges:
+        outline = ImageOps.autocontrast(gray.filter(ImageFilter.FIND_EDGES))
+        # hard threshold: dot wherever there is an edge, no dithering
+        gray = outline.point(lambda p: 0 if p > 72 else 255)
+    elif invert:
         gray = ImageOps.invert(gray)
     bitmap = gray.convert("1").load()  # Floyd-Steinberg dithered 1-bit
     # braille dot bit values by (dx, dy) within the 2x4 cell
@@ -227,6 +235,10 @@ def main():
                     help="output braille-dot text art (8x the detail of --ascii)")
     ap.add_argument("--invert", action="store_true",
                     help="text modes: for light text on a dark background")
+    ap.add_argument("--edges", action="store_true",
+                    help="braille mode: dot the outlines instead of the "
+                         "shading — theme-neutral output that reads correctly "
+                         "on both light and dark backgrounds")
     ap.add_argument("--link", action="append", default=[], metavar="URL",
                     help="text modes: embed a clickable link inside the art "
                          "(repeatable; output becomes an HTML <pre> block that "
@@ -238,8 +250,10 @@ def main():
     img = img.convert("RGB")
 
     if args.ascii or args.braille:
-        render = to_braille if args.braille else to_ascii
-        art = render(img, args.width, args.invert)
+        if args.braille:
+            art = to_braille(img, args.width, args.invert, edges=args.edges)
+        else:
+            art = to_ascii(img, args.width, args.invert)
         if args.link:
             art = weave_links(art, args.link)
         if args.output:

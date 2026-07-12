@@ -158,20 +158,37 @@ def esc(s):
 def weave_links(art, links):
     """Wrap runs of dots in <a> tags so the art contains clickable doors.
 
-    Links are spread vertically across the piece; each one grabs the middle
-    of the densest run of non-blank characters on its row. Returns an HTML
-    <pre> block (GitHub READMEs render raw <pre>/<a> HTML, where markdown
-    code blocks cannot contain links)."""
+    Each link spec is 'URL', 'URL|tooltip' or 'URL|tooltip|@r1-r2:c1-c2'.
+    With an explicit @rows:cols rectangle the link covers exactly those
+    character cells (rows and columns are 0-based, inclusive) — use this to
+    make a recognizable feature of the art clickable. Without it, links are
+    spread vertically across the piece, each grabbing the middle of the
+    densest run of non-blank characters on its row. Returns an HTML <pre>
+    block (GitHub READMEs render raw <pre>/<a> HTML, where markdown code
+    blocks cannot contain links)."""
     lines = art.rstrip("\n").split("\n")
-    out = {}
-    for i, spec in enumerate(links):
-        url, _, tip = spec.partition("|")
-        url, tip = url.strip(), tip.strip() or url.strip()
-        # spread target rows evenly, skipping the very top and bottom
-        row = round((i + 1) * len(lines) / (len(links) + 1)) - 1
-        # find a row nearby whose longest dot-run fits a link
+    segs = {}  # row -> list of (start, end, url, tip)
+
+    def add(r, c1, c2, url, tip):
+        segs.setdefault(r, []).append((c1, c2, url, tip))
+
+    auto = []
+    for spec in links:
+        parts = [p.strip() for p in spec.split("|")]
+        url = parts[0]
+        tip = parts[1] if len(parts) > 1 and parts[1] else url
+        if len(parts) > 2 and parts[2].startswith("@"):
+            rpart, cpart = parts[2][1:].split(":")
+            r1, _, r2 = rpart.partition("-")
+            c1, _, c2 = cpart.partition("-")
+            for r in range(int(r1), int(r2 or r1) + 1):
+                add(r, int(c1), int(c2 or c1) + 1, url, tip)
+        else:
+            auto.append((url, tip))
+    for i, (url, tip) in enumerate(auto):
+        row = round((i + 1) * len(lines) / (len(auto) + 1)) - 1
         for r in sorted(range(len(lines)), key=lambda r: abs(r - row)):
-            if r in out:
+            if r in segs:
                 continue
             runs = [(len(m), m_start) for m, m_start in _runs(lines[r])]
             if not runs:
@@ -179,19 +196,21 @@ def weave_links(art, links):
             length, start = max(runs)
             if length >= LINK_SPAN:
                 mid = start + (length - LINK_SPAN) // 2
-                out[r] = (mid, mid + LINK_SPAN, url, tip)
+                add(r, mid, mid + LINK_SPAN, url, tip)
                 break
         else:
             print(f"warning: no room left for link {url}", file=sys.stderr)
     html = []
     for r, line in enumerate(lines):
-        if r in out:
-            a, b, url, tip = out[r]
-            line = (esc(line[:a])
-                    + f'<a href="{esc(url)}" title="{esc(tip)}"><ins>'
-                    + esc(line[a:b]) + "</ins></a>" + esc(line[b:]))
-        else:
-            line = esc(line)
+        for c1, c2, url, tip in sorted(segs.get(r, []), reverse=True):
+            if len(line) < c2:  # line was right-stripped; restore blanks
+                line = line.ljust(c2, "⠀")
+            url, tip = url.replace('"', "%22"), tip.replace('"', "'")
+            line = (line[:c1]
+                    + f'\0a href="{url}" title="{tip}"\1\0ins\1'
+                    + line[c1:c2] + "\0/ins\1\0/a\1" + line[c2:])
+        # escape the art but not the tags smuggled through as \0...\1
+        line = esc(line).replace("\0", "<").replace("\1", ">")
         html.append(line)
     return "<pre>\n" + "\n".join(html) + "\n</pre>\n"
 

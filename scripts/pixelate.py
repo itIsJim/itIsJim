@@ -139,6 +139,70 @@ def to_braille(img, width, invert):
     return "\n".join(lines) + "\n"
 
 
+BLANKS = " ⠀"  # space and empty braille cell
+LINK_SPAN = 12      # characters of art each link occupies
+
+
+def esc(s):
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def weave_links(art, links):
+    """Wrap runs of dots in <a> tags so the art contains clickable doors.
+
+    Links are spread vertically across the piece; each one grabs the middle
+    of the densest run of non-blank characters on its row. Returns an HTML
+    <pre> block (GitHub READMEs render raw <pre>/<a> HTML, where markdown
+    code blocks cannot contain links)."""
+    lines = art.rstrip("\n").split("\n")
+    out = {}
+    for i, spec in enumerate(links):
+        url, _, tip = spec.partition("|")
+        url, tip = url.strip(), tip.strip() or url.strip()
+        # spread target rows evenly, skipping the very top and bottom
+        row = round((i + 1) * len(lines) / (len(links) + 1)) - 1
+        # find a row nearby whose longest dot-run fits a link
+        for r in sorted(range(len(lines)), key=lambda r: abs(r - row)):
+            if r in out:
+                continue
+            runs = [(len(m), m_start) for m, m_start in _runs(lines[r])]
+            if not runs:
+                continue
+            length, start = max(runs)
+            if length >= LINK_SPAN:
+                mid = start + (length - LINK_SPAN) // 2
+                out[r] = (mid, mid + LINK_SPAN, url, tip)
+                break
+        else:
+            print(f"warning: no room left for link {url}", file=sys.stderr)
+    html = []
+    for r, line in enumerate(lines):
+        if r in out:
+            a, b, url, tip = out[r]
+            line = (esc(line[:a])
+                    + f'<a href="{esc(url)}" title="{esc(tip)}">'
+                    + esc(line[a:b]) + "</a>" + esc(line[b:]))
+        else:
+            line = esc(line)
+        html.append(line)
+    return "<pre>\n" + "\n".join(html) + "\n</pre>\n"
+
+
+def _runs(line):
+    """Yield (run, start_index) for maximal runs of non-blank characters."""
+    run, start = "", None
+    for i, ch in enumerate(line):
+        if ch not in BLANKS:
+            if start is None:
+                start = i
+            run += ch
+        elif start is not None:
+            yield run, start
+            run, start = "", None
+    if start is not None:
+        yield run, start
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0],
                                  formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -163,6 +227,11 @@ def main():
                     help="output braille-dot text art (8x the detail of --ascii)")
     ap.add_argument("--invert", action="store_true",
                     help="text modes: for light text on a dark background")
+    ap.add_argument("--link", action="append", default=[], metavar="URL",
+                    help="text modes: embed a clickable link inside the art "
+                         "(repeatable; output becomes an HTML <pre> block that "
+                         "GitHub READMEs render). Use 'URL|tooltip text' to "
+                         "set the hover tooltip.")
     args = ap.parse_args()
 
     img = Image.open(args.input)
@@ -171,6 +240,8 @@ def main():
     if args.ascii or args.braille:
         render = to_braille if args.braille else to_ascii
         art = render(img, args.width, args.invert)
+        if args.link:
+            art = weave_links(art, args.link)
         if args.output:
             with open(args.output, "w") as f:
                 f.write(art)

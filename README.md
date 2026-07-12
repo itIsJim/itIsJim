@@ -1,49 +1,6 @@
-<div align="center">
-
-<img src="assets/header.svg" alt="Pixel-art banner: HI, I'M JIM — WELCOME TO MY PROFILE" width="100%" />
-
-</div>
-
-## 🕹️ About Me
-
-```text
-┌─────────────────────────────────────┐
-│  PLAYER 1        JIM                │
-│  CLASS           DEVELOPER          │
-│  GUILD           LULA-TECH          │
-│  STATUS          ▓▓▓▓▓▓▓▓░░ BUILDING│
-└─────────────────────────────────────┘
-```
-
-- 🔭 Currently working on: **something cool at lula-tech**
-- 🌱 Currently learning: **new things every day**
-- 💬 Ask me about: **code, pixels, and everything in between**
-- 📫 How to reach me: **jim.mao25@gmail.com**
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-## 👾 Tech Stack
-
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-1d2b53?style=for-the-badge&logo=javascript&logoColor=ffec27)
-![TypeScript](https://img.shields.io/badge/TypeScript-1d2b53?style=for-the-badge&logo=typescript&logoColor=29adff)
-![React](https://img.shields.io/badge/React-1d2b53?style=for-the-badge&logo=react&logoColor=29adff)
-![Node.js](https://img.shields.io/badge/Node.js-1d2b53?style=for-the-badge&logo=nodedotjs&logoColor=00e436)
-![Python](https://img.shields.io/badge/Python-1d2b53?style=for-the-badge&logo=python&logoColor=ffec27)
-![Git](https://img.shields.io/badge/Git-1d2b53?style=for-the-badge&logo=git&logoColor=ff004d)
-
-</div>
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## ⣿ Torino, In Text
 
-<details>
-<summary><b>a street sign in my city — rendered entirely in braille characters</b> (click, then squint)</summary>
-<br>
-
-```text
+<pre>
 ⠐⡈⡙⠽⢽⣹⢽⢽⢝⣽⣫⢿⢿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡨⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⠀⠀⠀⠀⠀⠀⠐⠀⢀⠀⠄⢀⠀⠉⠊⠯⣫⢯⢷⣳⡮⣪⢺⠀⠀⢀⠀⢀⠀⢀⠀⡀⠄⡸⠰
 ⢐⢀⠂⡂⢂⢉⠑⠯⢯⣞⣞⢽⣳⡳⡯⣟⡿⣿⣿⣿⣿⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠈⠀⠠⠀⠀⠄⠀⢀⠀⢀⠀⠀⠀⠀⠀⠈⠀⠁⡀⠀⢀⠀⠂⠁⠀⠐⠀⠁⠠⠀⠠⠀⠄⠀⠅⠀⠄⠀⠙⢽⣺⢽⢯⡯⣆⠄⠀⠠⠀⠠⠀⠀⠠⠀⡪⢘⠀⢈⠠
 ⢀⢂⢐⠐⡀⡂⠌⡐⠠⢁⠫⠳⣳⢽⢝⡮⣟⢮⢯⣻⢿⣻⣿⣿⣿⣿⣿⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⡀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠁⢀⠀⠈⠀⠀⠠⠀⠀⠄⠀⢀⠀⠄⠀⠂⠀⠂⠁⠀⠐⠈⠀⢱⢕⢯⡳⣝⣗⣿⣣⣆⡀⠂⢀⠂⠀⠀⡇⢸⠀⠀⠄
@@ -65,7 +22,7 @@
 ⣿⣽⣟⣿⢿⣿⣿⣿⣷⣶⣤⣁⡀⠌⠠⠐⢀⠈⠄⡁⡂⡪⣪⡺⣕⢝⢮⢎⢯⢪⢇⡗⣕⢧⢳⡹⡺⡐⠅⢕⢘⢌⠢⡑⡌⡢⡑⢅⢊⠪⡑⠜⢌⠢⡣⢱⢘⢌⢎⠜⡜⡸⡸⡘⡜⡜⡜⡜⡜⡎⠂⡁⠄⡑⠠⢑⠐⠠⢀⠀⠀⠀⠀⠀⠂⠀⠪⡪⡢⢪⢪⢪⠀⠀⠀⠀⠀⠠
 ⣿⣽⢯⡿⣿⢾⣯⣿⣻⡿⣿⣿⣿⣷⣶⣤⣄⡊⠀⢐⠐⡜⣔⢧⢳⡹⣪⡣⣏⢮⡣⡫⣎⢎⢧⢳⢝⢐⠍⡢⢑⠔⡑⢌⠢⡂⣊⠢⡑⢅⠕⡩⡂⡣⢊⠢⡑⡌⢆⢣⢑⠕⡌⡪⡘⡌⢎⢪⠪⠂⠁⢀⠠⠀⠅⠂⠌⠨⠐⠨⢐⢀⠀⠀⠀⠀⠀⢱⠨⡢⡣⡣
 ⣷⣯⣯⣻⣻⣽⣷⣻⣽⣟⣯⣿⣽⡿⣿⣿⣿⣿⣿⣶⣶⣬⣪⣎⢧⢫⡲⡕⡧⡳⡹⡪⣎⢮⢳⢕⢯⢐⢑⢌⠢⡑⢜⢐⢑⠌⡢⡑⢜⢐⢑⠔⡡⢊⠢⡑⢅⠪⡘⢔⠅⡕⢌⠆⡕⠜⡌⢆⠫⠈⡀⠄⠀⠐⠈⡀⠅⠨⢈⢐⢀⠂⠡⢁⠂⢄⢀⠀⡇⢸⡐⡕⠀⠀⠀⠀⠈⠀⠀⠂
-⡷⣽⣻⣟⡿⣾⣮⣯⣗⡿⣽⣾⢷⣿⣻⡾⣯⣟⣿⢿⣿⣿⣿⣿⡿⣷⣧⣯⣚⢎⢗⢝⢜⢎⢧⡫⡎⠔⢅⠆⡕⢌⠢⡑⢔⢑⠔⢌⠢⡑⢔⢑⢌⠪⡨⢌⠢⡑⢌⠢⡑⢌⠢⡑⡌⡪⡨⢪⠨⠀⠀⠀⢀⠁⠠⠀⠄⠁⠄⡐⠀⠌⡈⠄⢊⢀⠂⠄⡺⠀⣕⢹⠀⠀⠀⠐
+⡷⣽⣻⣟⡿⣾⣮⣯⣗⡿⣽⣾⢷⣿⣻⡾⣯⣟⣿⢿⣿⣿⣿⣿⡿⣷⣧⣯<a href="https://github.com/itIsJim/itIsJim" title="🚪 the repo behind this page">⣚⢎⢗⢝⢜⢎⢧⡫⡎⠔⢅⠆</a>⡕⢌⠢⡑⢔⢑⠔⢌⠢⡑⢔⢑⢌⠪⡨⢌⠢⡑⢌⠢⡑⢌⠢⡑⡌⡪⡨⢪⠨⠀⠀⠀⢀⠁⠠⠀⠄⠁⠄⡐⠀⠌⡈⠄⢊⢀⠂⠄⡺⠀⣕⢹⠀⠀⠀⠐
 ⣿⣺⢽⢵⣻⣺⣾⢽⡻⡿⣷⣷⣯⣗⣟⣯⣿⣽⣯⡿⣷⣯⢿⣽⣿⣿⣿⣿⣿⣿⣷⣯⣮⡳⡱⡕⡗⢅⢅⠕⡌⡢⢃⢕⠡⠢⡑⠅⠕⠌⠢⡑⠔⡑⡌⣂⢕⣨⣊⣌⣌⣬⣌⡆⠪⡐⡌⢆⠅⠐⠀⠁⠀⢀⠐⠀⠄⢁⠐⠀⠁⠂⡐⢀⠂⠄⠂⢨⠇⢸⢕⡵⠐⢄⢀
 ⣿⣾⡿⣯⣷⣗⣯⡯⣯⢿⢷⣳⣻⣻⡿⣷⣷⣷⣽⣻⣳⢿⣻⡷⣿⣞⣯⣿⣻⡿⣿⣿⡷⠻⠻⠺⣭⣴⢴⢵⢴⠶⠵⠶⢞⠞⢞⠞⡛⡛⡋⡛⡙⡙⢍⠫⠩⡑⡩⡘⢌⠬⣗⠇⠕⢌⢢⠱⠀⠂⠀⡀⠄⠀⢀⠠⠀⠠⠀⠁⢀⠁⠠⠀⠐⠈⠄⡸⡂⡯⡸⠂⡈⠄⠂⠌⡒⠄⡀
 ⣿⣷⣿⣿⣷⣿⣷⣿⣯⣿⣽⣗⣯⣟⣽⣞⣷⡿⣽⣟⣿⢿⣯⣿⣻⡾⣿⣽⣟⣿⣽⣾⠿⠎⠜⢨⡇⡆⢕⠌⡢⡑⡑⡑⠅⠕⡡⠊⢔⠐⢌⢐⢁⢊⠄⠅⠕⡐⡐⢌⢂⢪⡯⡣⠩⡢⡡⡃⡁⠠⠀⠀⠀⠀⠀⡀⠀⠂⠀⠂⠀⠄⠂⠈⡀⢁⠀⡎⢮⢪⠎⠠⠀⢂⠁⠅⠐⡈⠌⢊
@@ -88,7 +45,7 @@
 ⡣⡣⡣⡣⢧⢙⢞⣯⢷⣿⣟⣿⣿⡯⡎⢆⢇⢊⡂⡪⢐⠡⡂⡂⡊⡐⠌⡢⢱⠣⡑⢜⢐⠅⡕⢸⣟⣯⡿⣾⢽⣯⢷⣟⣾⣻⣽⣾⣻⣽⢷⣻⢿⡽⣟⣾⣗⣿⢾⣻⣽⣟⣯⣷⢿⣻⣞⣯⡷⣟⣾⢾⣯⢿⣞⣷⣳⣻⡾⣿⡿⣿⣿⣻⡿⣻⠀⠀⠄⠐⠀⠀⡂⠀⠀⠁⠀⠀⠄
 ⡪⡪⡪⡪⡇⡇⢿⡽⣽⣿⡽⣿⣾⡯⡎⡆⡣⠢⡂⡪⡐⢅⢂⢂⠢⠡⡑⠔⡩⡇⢌⢒⢔⠱⡘⠬⣟⣷⣟⣿⣻⣾⣻⣽⡾⣯⡷⣯⡷⣟⣿⡽⣿⡽⣟⣷⣻⣾⣻⣽⡾⣯⣷⣻⡿⣽⢯⣷⢿⣻⣽⢿⣾⣻⣽⢾⣳⣗⣿⣟⣿⣿⡿⡯⣯⣻⠀⠠⠀⠂⠀⠀⡂⠀⠀⠠⠐
 ⡪⡪⡪⡪⡺⡨⣫⣯⢷⣿⣻⣿⣾⡯⡪⢪⠨⡊⡢⢂⠪⡐⡐⠄⢅⠕⢌⢊⢼⡊⠔⢅⠆⡅⢕⢸⣟⣷⣟⣷⢿⣞⣯⣷⡿⣯⡿⣯⣿⣻⢷⣟⣯⡿⣯⣟⣷⣯⣟⣷⣟⢮⣪⡪⡝⣝⢫⡛⠿⡽⢾⢿⣞⣯⣟⣯⡷⣟⣷⣟⣯⣿⡯⡯⡷⣽⠀⠠⠀⠈⢤⢢⠆⡦⡢⡲⠤⢤⣈⡀
-⢮⢺⢜⢜⢕⢕⢽⢾⢽⣿⣽⣾⢿⣗⡍⡆⡃⢎⢐⠡⡑⡐⠌⢌⢂⠪⡐⢅⢪⢆⠣⡡⢃⢊⢢⢘⣿⢾⣳⣟⣯⣿⣽⢾⣻⣯⣿⣻⣾⣻⣯⢿⣳⡿⣯⡿⣞⣷⣟⡷⡯⣗⣗⣽⡺⣮⡳⣝⣝⢮⢧⡳⣜⢬⢭⣓⣛⢟⢯⢟⢿⣟⣯⣺⢽⣺⠁⠀⠐⠀⢺⢨⡣⠱⡘⡌⠀⡄⢀⠈
+⢮⢺⢜⢜⢕⢕⢽⢾⢽⣿⣽⣾⢿⣗⡍⡆⡃⢎⢐⠡⡑⡐⠌⢌⢂⠪⡐⢅⢪⢆⠣⡡⢃⢊⢢⢘⣿<a href="https://github.com/itIsJim?tab=repositories" title="🚪 my repositories">⢾⣳⣟⣯⣿⣽⢾⣻⣯⣿⣻⣾</a>⣻⣯⢿⣳⡿⣯⡿⣞⣷⣟⡷⡯⣗⣗⣽⡺⣮⡳⣝⣝⢮⢧⡳⣜⢬⢭⣓⣛⢟⢯⢟⢿⣟⣯⣺⢽⣺⠁⠀⠐⠀⢺⢨⡣⠱⡘⡌⠀⡄⢀⠈
 ⢕⢕⢕⢕⢕⢕⢽⣻⢽⣿⢾⣟⣿⡧⡇⡪⢌⠪⡐⢅⢊⠌⢌⢂⠢⢑⠨⡂⡪⡆⡃⡪⢘⢐⠅⢜⣯⡿⣯⣟⣷⣟⣾⣟⡿⣞⣷⢿⣞⣿⢾⣟⣿⣻⣽⣟⣿⣳⣟⡿⣯⣿⣺⣗⣯⡷⣯⣗⣯⢯⢷⢽⢮⢯⣞⣮⡺⣽⣳⣣⣿⡳⣗⢗⡯⣾⠂⠈⡀⠄⣹⠜⣌⠎⡌⢎⠀⣏⠢⡑
 ⢕⢕⢕⢕⢕⢕⢯⡯⣟⣿⣯⣿⣿⡗⡕⡌⠆⡕⢌⢂⠆⢅⠅⡂⢅⠕⡨⢂⢪⡣⢨⢂⠕⡐⢍⢔⣿⡽⣟⣾⢷⣻⣗⣿⣽⢿⣽⢯⡿⣾⣻⣽⡾⣯⡷⣿⡽⣯⣟⣿⣽⡾⣟⣾⣯⡿⣷⣻⣾⣻⣯⢿⡯⣟⣾⣺⣽⢷⣳⣷⢟⣞⣯⡳⣽⢺⠅⠀⠀⠀⢾⢱⢘⢎⢌⢲⠀⢾⣳⠖
 ⢕⢕⢕⢕⠕⡕⣽⢽⢽⣿⣺⣷⣿⡗⡕⢌⠪⡐⢅⠢⡡⡑⢌⠐⢅⢂⠪⡠⢱⢕⠡⡂⡃⡊⢆⢒⣯⡿⣯⣟⣯⡿⣾⢷⣻⣯⣟⣯⡿⣯⡿⣾⣻⣽⣟⣷⢿⣯⢿⣳⣿⣽⣟⣿⢾⣻⣯⣿⡾⣿⡾⣿⣟⣿⣯⣿⢾⣿⣽⢯⢯⣺⣺⢮⢗⣯⡃⠀⠀⠂⣻⡱⡡⡊⡒⡕⢀⠀⠉⠐
@@ -111,25 +68,6 @@
 ⢮⡳⣝⣜⢮⢳⣳⣳⣻⣷⣻⣯⣿⡸⡐⢕⢁⠣⡡⢁⢂⠡⡁⡂⢄⢑⠨⢐⠰⡱⢱⢐⢅⠕⡍⡊⣿⢽⣯⣿⣽⣿⢽⣿⣽⣿⢿⣿⣿⣿⣷⣻⢽⣺⢾⢽⣺⣺⡺⡽⣕⡯⣞⢽⡪⣗⢧⢯⡺⣕⢯⡺⣕⢧⢧⡳⣝⢮⡣⣗⢝⣝⢮⢮⣫⢳⢵⠀⠂⠁⢀⠁⠀⠀⠀⢀⠀⡀⠂
 ⡳⡽⣜⢼⣪⢳⣳⡳⣿⣷⣻⣿⣿⢸⠨⡒⠠⡑⡐⡐⡐⡐⡐⡐⡐⠠⠨⢐⢘⢜⠔⡅⢅⠇⡪⡨⣗⣿⢷⣻⢾⣯⣻⣽⡷⣿⣟⣿⣾⣯⣿⣺⡽⡽⡽⣽⣺⣪⢯⣫⢞⡮⣳⢝⣮⡳⣝⢞⢮⡳⡳⣝⢮⢳⡣⡯⣪⡳⣹⡪⡳⣕⢗⡯⣪⡳⣽⠀⠐⠈⠀⡀⠀⠀⠁⠀⠀⠀⠀⠄
 ⣝⢞⣎⢧⡳⣝⢮⡯⣿⣾⣻⣷⣿⢜⢌⠪⠠⡑⡐⡐⠐⠄⢅⠂⡂⠅⡑⡐⢸⢸⠨⡘⢔⢑⢌⠆⣯⣟⣯⣿⢯⣗⣿⣳⣿⣯⡿⣷⣿⣽⣿⣪⢯⡯⣟⢞⡮⣺⢵⡳⣫⢞⡵⣫⢞⢮⡳⣝⢵⡫⣝⢮⡺⡵⣝⢮⡣⡯⡺⣜⢽⢜⣕⢯⡺⣚⢾⠀⠀⠂⠀⠄⠀⠀⠀⠀⠀⠀⠀⡀
-```
+</pre>
 
-Made with <a href="scripts/pixelate.py">scripts/pixelate.py</a> — photo in, text art out.
-
-</details>
-
-## 📊 Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=itIsJim&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0e0e22&title_color=ff77a8&icon_color=ffec27&text_color=c2c3c7" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itIsJim&layout=compact&theme=tokyonight&hide_border=true&bg_color=0e0e22&title_color=ff77a8&text_color=c2c3c7" height="165" alt="Top languages" />
-
-</div>
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<div align="center">
-
-<img src="assets/footer.svg" alt="Thanks for stopping by!" width="80%" />
-
-</div>
+<sub>a street sign in my city, rendered entirely in braille characters — made with <a href="scripts/pixelate.py">pixelate.py</a>. some of these dots are doors. 🚪 find them (or hover).</sub>

@@ -113,7 +113,7 @@ def to_ascii(img, width, invert):
     return "\n".join(lines) + "\n"
 
 
-def to_braille(img, width, invert, edges=False):
+def to_braille(img, width, invert, edges=False, edge_threshold=48):
     """Braille characters give a 2x4 dot grid per character cell — much
     finer detail than one-char-per-pixel ASCII. Dots are set for dark
     pixels by default; --invert sets them for bright pixels instead
@@ -127,7 +127,7 @@ def to_braille(img, width, invert, edges=False):
     if edges:
         outline = ImageOps.autocontrast(gray.filter(ImageFilter.FIND_EDGES))
         # hard threshold: dot wherever there is an edge, no dithering
-        gray = outline.point(lambda p: 0 if p > 72 else 255)
+        gray = outline.point(lambda p: 0 if p > edge_threshold else 255)
     elif invert:
         gray = ImageOps.invert(gray)
     bitmap = gray.convert("1").load()  # Floyd-Steinberg dithered 1-bit
@@ -148,7 +148,7 @@ def to_braille(img, width, invert, edges=False):
 
 
 BLANKS = " ⠀"  # space and empty braille cell
-LINK_SPAN = 12      # characters of art each link occupies
+LINK_SPAN = 20      # characters of art each link occupies
 
 
 def esc(s):
@@ -188,8 +188,8 @@ def weave_links(art, links):
         if r in out:
             a, b, url, tip = out[r]
             line = (esc(line[:a])
-                    + f'<a href="{esc(url)}" title="{esc(tip)}">'
-                    + esc(line[a:b]) + "</a>" + esc(line[b:]))
+                    + f'<a href="{esc(url)}" title="{esc(tip)}"><ins>'
+                    + esc(line[a:b]) + "</ins></a>" + esc(line[b:]))
         else:
             line = esc(line)
         html.append(line)
@@ -239,6 +239,9 @@ def main():
                     help="braille mode: dot the outlines instead of the "
                          "shading — theme-neutral output that reads correctly "
                          "on both light and dark backgrounds")
+    ap.add_argument("--edge-threshold", type=int, default=48, metavar="N",
+                    help="edge sensitivity for --edges, 0-255; lower = more "
+                         "detail (default: 48)")
     ap.add_argument("--link", action="append", default=[], metavar="URL",
                     help="text modes: embed a clickable link inside the art "
                          "(repeatable; output becomes an HTML <pre> block that "
@@ -251,7 +254,8 @@ def main():
 
     if args.ascii or args.braille:
         if args.braille:
-            art = to_braille(img, args.width, args.invert, edges=args.edges)
+            art = to_braille(img, args.width, args.invert, edges=args.edges,
+                             edge_threshold=args.edge_threshold)
         else:
             art = to_ascii(img, args.width, args.invert)
         if args.link:

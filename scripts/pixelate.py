@@ -207,8 +207,8 @@ def weave_links(art, links):
                 line = line.ljust(c2, "⠀")
             url, tip = url.replace('"', "%22"), tip.replace('"', "'")
             line = (line[:c1]
-                    + f'\0a href="{url}" title="{tip}"\1\0ins\1'
-                    + line[c1:c2] + "\0/ins\1\0/a\1" + line[c2:])
+                    + f'\0a href="{url}" title="{tip}"\1'
+                    + line[c1:c2] + "\0/a\1" + line[c2:])
         # escape the art but not the tags smuggled through as \0...\1
         line = esc(line).replace("\0", "<").replace("\1", ">")
         html.append(line)

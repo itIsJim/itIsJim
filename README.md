@@ -1,10 +1,7 @@
 <div align="center">
 <br>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/typing-box-dark.svg">
-  <img src="assets/typing-box-light.svg" alt="Hello, it is Jim. Welcome!">
-</picture>
+<b>Hello, it is Jim. Welcome!</b>
 
 <p>
   <a href="https://itisjim.github.io"><picture>

@@ -53,47 +53,40 @@ def text_cells(s):
 
 
 def typing_box(message, accent_word, theme, out):
-    """message typed out dot by dot; accent_word (if found) gets the
-    accent color."""
+    """message typed out character by character in a normal (system
+    monospace) font inside a plain outlined box; accent_word (if found)
+    gets the accent color."""
     ink, accent, frame = THEMES[theme]
-    tw = text_cells(message)
-    w_cells = tw + 2 * PAD
-    h_cells = 5 + 2 * PAD
-    W, H = w_cells * CELL, h_cells * CELL
+    fs = 26                    # font size
+    adv = fs * 0.62            # per-character advance
+    pad_x, pad_y = 30, 24
+    W = round(len(message) * adv + adv * 1.6 + 2 * pad_x)
+    H = fs + 2 * pad_y
+    baseline = pad_y + fs * 0.78
+    font = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
-    el = []
-    # dotted frame
-    step = 2
-    for x in range(0, w_cells + 1, step):
-        el.append(f'<circle cx="{(x + .5) * CELL:g}" cy="{.5 * CELL:g}" r="{DOT_R}" fill="{frame}"/>')
-        el.append(f'<circle cx="{(x + .5) * CELL:g}" cy="{(h_cells - .5) * CELL:g}" r="{DOT_R}" fill="{frame}"/>')
-    for y in range(step, h_cells - 1, step):
-        el.append(f'<circle cx="{.5 * CELL:g}" cy="{(y + .5) * CELL:g}" r="{DOT_R}" fill="{frame}"/>')
-        el.append(f'<circle cx="{(w_cells - .5) * CELL:g}" cy="{(y + .5) * CELL:g}" r="{DOT_R}" fill="{frame}"/>')
+    el = [f'<rect x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="10" '
+          f'fill="none" stroke="{frame}" stroke-width="2"/>']
 
-    # find accent range (character indices of accent_word in message)
     a0 = message.find(accent_word) if accent_word else -1
     a1 = a0 + len(accent_word) - 1 if a0 >= 0 else -2
 
-    x = PAD
     delay = 0.4
     for i, ch in enumerate(message):
-        color = accent if a0 <= i <= a1 else ink
-        dots = dots_for_glyph(ch, x, PAD, color)
-        if dots:
-            el.append(f'<g class="ch" style="animation-delay:{delay:.2f}s">'
-                      + "".join(dots) + "</g>")
+        if ch != " ":
+            color = accent if a0 <= i <= a1 else ink
+            x = pad_x + i * adv
+            c = ch.replace("&", "&amp;").replace("<", "&lt;")
+            el.append(f'<text x="{x:.1f}" y="{baseline:.1f}" class="ch" '
+                      f'style="animation-delay:{delay:.2f}s" fill="{color}" '
+                      f'font-family="{font}" font-size="{fs}">{c}</text>')
         delay += TYPE_DELAY
-        x += glyph_w(ch) + 1
 
-    # blinking cursor after the text, dotted block 2 cells wide
-    cur = []
-    for dy in range(5):
-        for dx in range(2):
-            cur.append(f'<circle cx="{(x + dx + 0.5) * CELL:g}" '
-                       f'cy="{(PAD + dy + 0.5) * CELL:g}" r="{DOT_R}" fill="{ink}"/>')
-    el.append(f'<g class="cursor" style="animation-delay:{delay:.2f}s">'
-              + "".join(cur) + "</g>")
+    # blinking block cursor after the text
+    cx = pad_x + len(message) * adv + 3
+    el.append(f'<rect x="{cx:.1f}" y="{baseline - fs * 0.75:.1f}" '
+              f'width="{adv * 0.8:.1f}" height="{fs * 0.92:.1f}" fill="{ink}" '
+              f'class="cursor" style="animation-delay:{delay:.2f}s"/>')
 
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
            f'viewBox="0 0 {W} {H}" role="img" aria-label="{message}">'
@@ -123,7 +116,7 @@ def button(label, theme, out):
 if __name__ == "__main__":
     os.makedirs("assets", exist_ok=True)
     for theme in THEMES:
-        typing_box("HELLO, IT IS JIM. WELCOME!", "JIM", theme,
+        typing_box("Hello, it is Jim. Welcome!", "Jim", theme,
                    f"assets/typing-box-{theme}.svg")
         for label in ("WEBSITE", "LINKEDIN", "EMAIL"):
             button(label, theme, f"assets/btn-{label.lower()}-{theme}.svg")

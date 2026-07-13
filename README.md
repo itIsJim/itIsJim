@@ -3,7 +3,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/typing-box-dark.svg">
-  <img src="assets/typing-box-light.svg" alt="Hello, it is Jim. Welcome!" width="720">
+  <img src="assets/typing-box-light.svg" alt="Hello, it is Jim. Welcome!">
 </picture>
 
 <p>

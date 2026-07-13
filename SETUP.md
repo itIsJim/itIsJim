@@ -1,41 +1,14 @@
 # Setup
 
-How to get this pixel-art profile live on GitHub.
+This repo is the GitHub profile README for **itIsJim** — shown at
+github.com/itIsJim because the repo is named after the account.
 
-## 1. Create the special profile repo
+- `README.md` — hello line + Website / LinkedIn / Email buttons
+- `assets/btn-*.svg` — dotted link buttons (light + dark, picked via `<picture>`)
+- `scripts/generate_typing_box.py` — regenerates the buttons (and can make an
+  animated typing-box banner if wanted)
+- `scripts/pixelate.py` — photo → pixel art / ASCII / braille converter used
+  for the art on [itisjim.github.io](https://itisjim.github.io); supports
+  clickable links inside the art (`--link "URL|tooltip|@rows:cols"`)
 
-On GitHub, create a **public** repo named **exactly your username** (e.g.
-`github.com/yourname/yourname`). GitHub shows its `README.md` on your profile
-page.
-
-## 2. Fill in your username
-
-The README uses `YOURUSERNAME` as a placeholder in the stats-card and snake
-URLs. Replace it:
-
-```sh
-sed -i '' 's/YOURUSERNAME/your-actual-username/g' README.md
-```
-
-## 3. Personalize
-
-- **Banner name/subtitle** — regenerate the art:
-  ```sh
-  python3 scripts/generate_pixel_art.py --name JIM --subtitle "WELCOME TO MY PROFILE"
-  ```
-  (Only A-Z, spaces and `, . ' ! -` are supported by the pixel font.)
-- **Pixelate a photo** (e.g. for a retro avatar) — requires Pillow:
-  ```sh
-  python3 scripts/pixelate.py photo.jpg -o assets/avatar.svg --width 48 --palette pico8
-  ```
-  See `python3 scripts/pixelate.py --help` for palettes, dithering and PNG output.
-- **About Me / Tech Stack** — edit `README.md` directly.
-
-## 4. Push
-
-```sh
-git add -A
-git commit -m "pixel art profile"
-git remote add origin git@github.com:yourname/yourname.git
-git push -u origin main
-```
+Preview like GitHub renders it: `grip README.md` → http://localhost:6419

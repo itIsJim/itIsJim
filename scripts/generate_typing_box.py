@@ -57,16 +57,16 @@ def typing_box(message, accent_word, theme, out):
     monospace) font inside a plain outlined box; accent_word (if found)
     gets the accent color."""
     ink, accent, frame = THEMES[theme]
-    fs = 26                    # font size
+    fs = 14                    # font size, kept close to the nav links
     adv = fs * 0.62            # per-character advance
-    pad_x, pad_y = 30, 24
+    pad_x, pad_y = 16, 12
     W = round(len(message) * adv + adv * 1.6 + 2 * pad_x)
     H = fs + 2 * pad_y
     baseline = pad_y + fs * 0.78
     font = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
 
-    el = [f'<rect x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="10" '
-          f'fill="none" stroke="{frame}" stroke-width="2"/>']
+    el = [f'<rect x="1.5" y="1.5" width="{W - 3}" height="{H - 3}" rx="8" '
+          f'fill="none" stroke="{frame}" stroke-width="1.5"/>']
 
     a0 = message.find(accent_word) if accent_word else -1
     a1 = a0 + len(accent_word) - 1 if a0 >= 0 else -2

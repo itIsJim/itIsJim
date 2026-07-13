@@ -9,7 +9,7 @@
     <img src="assets/btn-website-light.svg" alt="Website" height="22">
   </picture></a>
   &emsp;&bull;&emsp;
-  <a href="https://www.linkedin.com/in/itisjim"><picture>
+  <a href="https://www.linkedin.com/in/jun-ran-mao/"><picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg">
     <img src="assets/btn-linkedin-light.svg" alt="LinkedIn" height="22">
   </picture></a>

@@ -181,8 +181,16 @@ def weave_links(art, links):
             rpart, cpart = parts[2][1:].split(":")
             r1, _, r2 = rpart.partition("-")
             c1, _, c2 = cpart.partition("-")
+            c1, c2 = int(c1), int(c2 or c1)
             for r in range(int(r1), int(r2 or r1) + 1):
-                add(r, int(c1), int(c2 or c1) + 1, url, tip)
+                if r >= len(lines):
+                    continue
+                # strictly the dots: trim the segment to the visible
+                # characters on this row, skip rows with none
+                seg = lines[r][c1:c2 + 1]
+                filled = [i for i, ch in enumerate(seg) if ch not in BLANKS]
+                if filled:
+                    add(r, c1 + filled[0], c1 + filled[-1] + 1, url, tip)
         else:
             auto.append((url, tip))
     for i, (url, tip) in enumerate(auto):

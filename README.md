@@ -24,24 +24,33 @@
 </div>
 
 <pre>
-⣤⣤⣤⣤⣤⣦⣦⣦⣶⢶⣶⣶⣷⣾⣾⣾⡷⣿⡽⣯⢿⢯⢿⢽⠟⡟⡟⢟⠟⠻⡛⠛⠛⠛⠝⠋⠋⠙⢉⠩⠉⡉⠉⠉⡈⢈⢈⠈⠠⠁⠌⢀⠂⠂⡂⢐⢀⠂⢂⠐⡀⠂⢂⠐⠐⡀⡂⡐⡀⠂⡂⢐
-⢻⠳⠻⠛⠝⠫⢓⠫⢋⢋⠃⡃⠅⠑⡁⢁⢁⠅⡈⡐⠠⠁⡂⠄⠂⠄⠄⡂⠠⢁⠠⠁⠌⡀⢂⠠⠁⠌⠀⠄⠂⠠⠈⠄⠂⠠⢀⠈⠄⠂⡈⠠⢀⠁⡀⢂⠠⠐⠀⢂⠠⠁⠄⠂⢁⠠⠀⡂⠄⠡⠂⠰
-⢐⠠⢁⢊⠨⢈⠠⠈⠄⢂⠡⠐⡈⢐⠠⠁⠄⡐⠠⠈⠌⡀⠂⠌⠄<a href="https://juns.framer.ai/projects" title="o · projects">⡁⢂⠐⡈⠠⠐⢈⠠⠐⠀⠄⠂⡈</a>⠐⠈⢀⠁⠈⠠⠈⠀⠄⠂⠐⠀⠄⠂⢀<a href="https://itisjim.github.io" title="o · my website">⠐⠀⠠⠀⠄⠁⠠⠀⠐⠀⠂⠠⠐</a>⠠⠐⢈⠀⠅⢨
-⢐⠨⠐⡀⢂⢐⠠⠡⠨⠀⡂⠂⢂⠁⠄⠡⠁⠄⠡⢈⠐⠀⠅⠨⠀<a href="https://juns.framer.ai/projects" title="o · projects">⡐⠀⢂⠀⡁⢈⠀⠠⠈⡀⠂⠠⠀</a>⠂⠁⢀⠀⢁⠀⠂⠁⠀⠄⠂⠁⠀⠠⠀<a href="https://itisjim.github.io" title="o · my website">⠠⠈⢀⠠⠐⠈⠀⡀⠁⡈⠀⠂⠐</a>⠠⢈⠠⠀⡁⢰
-⢐⠠⢁⢂⢐⠠⠐⠐⠠⠁⠄⠡⠀⠂⡁⠄⠁⠄⢁⠠⠈⠠⠈⠠⠐<a href="https://juns.framer.ai/projects" title="o · projects">⠀⡈⠀⡀⠠⠀⠐⠀⠄⠀⠄⠂⠀</a>⠂⠀⠄⠀⠄⠀⠐⠀⠁⢀⣤⣤⠀⠠⠐<a href="https://itisjim.github.io" title="o · my website">⠀⠠⠀⢀⠠⠐⠀⠠⠀⠄⢈⢀⠡</a>⠐⠀⡐⢀⠂⢸
-⢐⠈⠠⢀⣀⡐⠈⠠⠁⠂⡁⠄⢁⠂⠠⠀⠡⠐⠀⠄⠂⠁⠐⠀⠄<a href="https://juns.framer.ai/projects" title="o · projects">⠂⠀⠄⠠⠀⠂⠁⠀⠂⠀⠄⠐⠀</a>⠈⡀⠠⠀⠄⠈⠀⠄⠀⣺⡿⣿⡃⠀⠀<a href="https://itisjim.github.io" title="o · my website">⠐⠀⠐⠀⢀⠀⠐⠀⠄⠂⠠⠀⠄</a>⠠⠁⠠⢀⠂⢸
-⢐⠨⠀⣾⡿⣿⠀⠨⠀⠅⡀⠂⠄⠂⢁⠈⡀⠂⠁⠄⠂⠁⡈⠀⠂<a href="https://juns.framer.ai/projects" title="o · projects">⡀⠁⠄⠠⠀⠂⠀⠁⠀⢁⠀⠐⠈</a>⠀⠀⡀⠠⠀⠐⢀⠀⠀⣺⡿⣿⡂⠀⠈<a href="https://itisjim.github.io" title="o · my website">⢀⠈⠀⣀⣤⣤⣤⣦⣀⡀⠂⠐⠀</a>⢂⠈⠄⠂⡀⢸
-⠐⡐⠀⣿⣟⣿⠁⠀⠁⠂⡐⠀⠂⠨⠀⠄⠂⢈⣄⡀⠂⣡⣤⡀⠁<a href="https://juns.framer.ai/projects" title="o · projects">⠀⠐⢀⣠⣴⣴⣶⣶⣤⣀⠀⢀⠁</a>⠀⠁⢀⣴⣾⣿⣿⣿⣦⢾⣻⣿⠅⠀⠀<a href="https://itisjim.github.io" title="o · my website">⢀⣠⣾⢿⣽⠟⠟⡿⣿⢿⣖⠀⠁</a>⠄⠂⠄⢁⠀⢼
-⠨⠠⠀⣿⣯⣿⣠⣾⣿⣿⢿⣶⣤⠀⠡⠀⠰⣿⣿⡇⣼⣿⣿⡿⠀<a href="https://juns.framer.ai/projects" title="o · projects">⠀⣴⣿⣻⠿⠛⠛⠻⣿⣿⣷⠀⠀</a>⠁⢠⣿⢿⡿⠉⠈⠈⠻⣿⣳⣿⠅⠀⠀<a href="https://itisjim.github.io" title="o · my website">⣴⣿⣻⡟⠀⠀⠀⠀⠻⣟⣿⣇⠀</a>⠂⢐⠈⡀⠄⢸
-⠠⡁⠈⣿⣗⣿⠿⠉⠉⠙⢿⡿⣿⡆⠀⠄⢘⣿⣻⣿⠛⠉⠈⠀⠀<a href="https://juns.framer.ai/projects" title="o · projects">⣼⣿⣾⠏⠀⢀⠀⠀⢹⣷⣻⡗⠀</a>⠀⣿⢿⣿⠁⠀⠀⡀⠀⢽⡷⣿⡁⠀⠐<a href="https://itisjim.github.io" title="o · my website">⣿⡽⣿⠀⠀⠀⠂⠀⢸⣿⣻⡧⠀</a>⠨⠀⠄⠄⠀⢽
-⠐⠄⠨⣿⣟⡿⠀⠐⢈⠀⢐⣿⢿⣿⠀⠀⢸⡿⣽⡯⠀⠠⠐⠈⠀<a href="https://juns.framer.ai/projects" title="o · projects">⣿⢷⣿⠁⠠⠀⠐⠀⢸⡷⣻⣏⠀</a>⠀⣿⣻⣿⠀⠀⠀⠀⠀⣻⣟⣿⠄⠀⠠<a href="https://itisjim.github.io" title="o · my website">⣿⣟⣿⡀⠀⠁⠀⢀⣼⣷⣿⠏⠀</a>⠠⠁⡐⢈⠀⢽
-⠨⡀⢘⣿⣻⣏⠀⠨⠀⡀⢐⣿⣿⡯⠀⠄⢸⣟⣿⡯⠀⠀⠂⡁⠀<a href="https://juns.framer.ai/projects" title="o · projects">⢿⡿⣿⡅⠀⠀⠁⢀⣾⣯⣿⠃⠀</a>⠀⢿⣯⣿⣦⡀⡀⣠⣼⣿⢯⣿⠀⠀⠀<a href="https://itisjim.github.io" title="o · my website">⠹⣿⣽⣷⣆⣄⣤⣾⣿⣽⠏⠀⠐</a>⢀⠁⠄⠂⠀⣽
-⢐⠄⢘⣿⣽⣷⣄⠐⢀⣠⣾⣿⡿⠁⠀⠄⢸⣯⢿⣇⠀⢁⠐⡀⠀<a href="https://juns.framer.ai/projects" title="o · projects">⠘⢿⣿⣿⣧⣶⣶⣿⣿⡟⠃⠀⢀</a>⠀⠀⠻⣾⣯⣿⣿⡿⠋⢻⣿⡿⠀⠈⠀<a href="https://itisjim.github.io" title="o · my website">⠀⠈⠻⠾⠿⠿⠿⠟⠉⠀⡀⠄⢈</a>⠠⠐⡀⢁⠠⢽
-⢐⠀⢸⣿⣾⡛⢿⣿⣿⣿⡿⠟⠁⠀⠌⠀⠸⢿⢿⠃⠀⠄⠂⡀⠌<a href="https://juns.framer.ai/projects" title="o · projects">⠀⠀⠉⠙⠛⠛⠋⠋⠁⠀⢀⠐⠀</a>⠄⢀⠀⠀⠁⠁⠁⡀⠄⠀⡀⠠⠀⠐⠀<a href="https://itisjim.github.io" title="o · my website">⠂⡀⠄⠀⡀⢀⠀⡀⠄⢁⠠⠐⢀</a>⠂⡁⡐⠠⠀⢿
-⢐⠐⡀⠙⠉⡀⢀⠈⠉⠈⠀⠠⠐⢈⠠⠁⠄⠀⡀⠀⠂⠠⠁⠠⢀<a href="https://juns.framer.ai/projects" title="o · projects">⠨⠀⠂⡀⠄⠂⠀⠄⠂⢈⠀⠄⢁</a>⠠⠀⠄⠁⠄⠁⠠⠀⡀⠂⡀⠄⠂⢈⠀<a href="https://itisjim.github.io" title="o · my website">⡁⠠⠐⢀⠐⡀⠄⠠⠐⢀⠐⡈⠠</a>⠐⡀⢂⠐⢀⢿
-⠠⡁⢂⠁⠅⢐⠠⢈⠌⠠⢁⠂⠡⠐⢀⠂⠌⡀⢂⠁⠌⠐⡈⠠⢀<a href="https://juns.framer.ai/projects" title="o · projects">⠐⡀⡁⠄⠄⠂⡁⠐⡈⢀⠐⡀⠂</a>⡀⠂⠄⡁⠄⢈⠀⡂⢀⠂⠠⠀⢂⠠⠠<a href="https://itisjim.github.io" title="o · my website">⠀⢂⠈⠠⠀⠄⠄⢁⢈⠠⠀⠂⡁</a>⠂⢂⠢⢈⠠⣻
-⠌⠔⡐⠨⡈⡐⢐⠐⡈⡐⠠⠨⠠⠁⠂⠄⠡⠐⠀⠌⠠⠁⠄⠌⡀<a href="https://juns.framer.ai/projects" title="o · projects">⠂⠄⡐⢀⠂⠡⠀⠅⡀⠂⠄⠂⡁</a>⠄⡁⢂⠐⡈⠠⠐⢀⠂⡈⠄⠨⠀⠄⢂<a href="https://itisjim.github.io" title="o · my website">⠨⠀⠌⠠⢁⠐⡐⡀⠂⠄⠡⢁⠂</a>⠡⡐⠨⠠⠨⣻
-⢸⢐⠔⡁⡂⠔⡁⡂⢂⠐⡈⢀⠂⡁⠡⢈⠐⡈⠄⠡⠨⠠⢁⢂⠂⠅⠡⢐⠐⡈⠌⡠⠁⢄⠡⡈⡐⡐⡐⡀⡂⡐⣀⡁⡨⡀⡄⣄⢌⣠⢡⡨⣠⣐⣄⣅⣆⣆⣔⣔⣔⡵⣜⣴⣖⣮⢶⣲⢵⢾⢜⣯
+⢪⢪⢸⢘⢜⠸⣜⠀⡀⠂⡀⡂⠔⡀⢂⢐⢀⢂⠐⡀⢂⠐⡀⠂⠄⢂⠐⠠⠀⠄⢂⠀⡂⠄⠂⡀⢂⠐⡀⢂⠐⠠⠐⠠⢀⠐⡀⢂⠐⡀⢂⠐⡀⡂⢂⠐⡀⠂⠄⠂⠄⠂⡀⠂⠄⠂⠄⠂⡐⠠⠐⡀⢂⠐⡀⢂⢐⠠⠂⡐⢀⠂⡐⠠
+⡱⡑⡜⢜⢸⢘⢮⠀⠐⠐⡀⢐⠐⠠⢁⢐⠠⠐⢐⠐⠐⡀⢂⠡⠈⠠⠈⠄⡡⠈⠠⠐⠀⠄⡁⢐⠀⡂⢐⠠⠈⡐⢈⠀⠄⠂⡐⢀⠂⡂⡐⠐⡀⢂⠐⡐⠠⠁⠌⠐⢈⠠⠀⠅⠂⠡⠀⠅⢐⠀⠅⡀⠂⠄⢐⠠⠀⡂⠁⠄⠂⢐⠀⡁
+⢜⢌⠎⡎⡪⢌⢗⠀⠨⠐⠀⢂⠨⠈⠄⡐⠠⢁⠂⠨⠐⡀⠂⠄⠅⠌⡈⡐⠠⠈⠄⠡⠈⠄⢐⠀⡂⢐⠀⠂⡁⠠⠠⠀⠌⠄⢂⠐⡀⠂⠄⠡⠐⡐⢀⠂⠌⠐⡈⡈⠠⠀⠅⡐⠁⠄⠡⠈⠄⠂⡁⠄⠁⠌⢀⠐⡀⢂⠁⠄⠡⠐⠠
+⢪⠢⡣⡣⡑⣷⣷⠇⠈⠠⠁⠄⠠⢁⠂⡂⠡⠐⡈⠄⠡⠀⠅⠌⢐⠐⡀⢂⢁⠨⢀⠂⡁⠈⠄⠂⠐⡀⠌⠐⡀⠂⠂⠐⠐⢈⠠⠐⠠⠁⠌⠠⢁⠐⡀⡂⡁⠂⠄⠂⠄⡁⠂⠄⠡⠈⠀⠁⠂⠁⠀⠂⠁⠐⠀⠂⠐⠀⢂⢈⠀⠌⠀⠅
+⡑⠕⡕⢜⢌⠲⡯⠀⡈⠄⠡⢈⠀⡂⠔⠠⠁⡂⢐⢈⠠⠁⠌⢐⠐⡀⢂⠂⠄⠂⡂⢐⠠⠁⠄⠁⠂⠐⠀⠁⠄⠈⠀⠡⠈⠀⠐⠀⢁⢈⢈⢀⣀⡠⣀⣄⣄⣤⡤⣤⣤⣤⣴⣤⣦⣶⣴⣵⣶⡷⣷⢷⣷⣷⣿⣽⣟⡿⣻⡏⢷⠔⠈⡀
+⣟⡷⣼⣨⡂⠕⢽⠀⠐⠈⠐⠀⠐⠀⠈⠀⠁⠐⠀⡀⢐⢈⢈⡀⣀⣀⣄⣠⣠⣄⣤⣠⣤⣤⣴⣴⢶⣲⣶⣵⣶⣾⣾⣶⣷⣿⢿⢿⣿⡻⣟⢿⢻⢻⠻⠗⠟⠷⠻⠛⠗⢛⠚⡙⠚⢉⠋⡉⢊⠉⡑⢉⠐⡁⠌⢐⠈⣻⡵⡇⢽⠅⠀⠄
+⠷⠟⠟⠛⢛⣿⢮⣦⣦⣶⣶⣾⣶⣾⣾⢿⣾⢿⣻⣟⡿⡿⡿⡿⠿⡟⡯⢟⠟⠟⡻⠛⠝⠝⠋⢛⠙⢙⠩⠉⠉⠘⠈⢀⠂⡀⠡⠀⠄⠠⢀⠠⠀⠄⠠⠈⠐⡀⠂⢂⠨⠀⠄⠂⠨⠀⠂⠐⡀⠐⢀⠂⡐⠠⠈⠄⠀⣿⢽⢕⢝⡅⢀⢁
+⠀⡀⠠⠀⢰⡿⣝⢙⢙⠙⠍⡙⠨⠑⡉⠩⠨⠩⠨⠐⡀⠂⠄⠄⠡⠠⠠⢐⠠⢁⠐⠠⠁⢂⠁⡂⡈⠠⠀⠌⠠⠁⡈⠀⠄⠄⠂⠁⠄⢂⠠⢀⠐⠀⠌⠀⡁⠠⠈⠀⠄⠂⠂⠁⡐⠈⡀⢁⠠⠈⡀⠐⡀⠅⠨⢈⠀⣿⢽⢕⢱⠅⠀⠄
+⠠⢀⠂⠀⢰⣿⡅⢐⠠⠡⢁⢂⠡⠂⠂⠌⢐⠠⢁⠂⠄⠅⠌⠄⡁⠂⠅⠄⠂⢂⠨⠐⢁<a href="https://juns.framer.ai/projects" title="o · projects">⠐⠐⢀⠐⡈⠠⠁⠂⢁⠀⡁⠄</a>⠂⠈⡀⠐⠀⢀⠀⡀⠁⡀⠂⠀⠠⠈<a href="https://itisjim.github.io" title="o · my website">⠀⠄⠂⠀⠁⢀⠀⠄⠀⠠⠀⡀</a>⠂⡀⠂⡁⠄⠀⣿⡽⡅⣻⠄⢈
+⠀⠄⢀⠁⢸⣿⡂⠌⡂⠅⡂⡐⠠⢁⠡⠈⠄⠂⡐⢈⠐⢈⠀⠂⠄⢁⠂⢈⠐⢀⠐⠈⢀<a href="https://juns.framer.ai/projects" title="o · projects">⠈⠄⠂⠠⠀⠂⠠⠈⠀⢀⠀⡀</a>⠄⠀⡀⠄⠂⠀⢀⠀⡀⠀⠀⠐⠀⠀<a href="https://itisjim.github.io" title="o · my website">⠂⠀⠄⠈⢀⠠⠀⠠⠈⠀⠄⠀</a>⠂⠐⡀⠄⠂⠨⡿⡽⡌⣞⠄⢀⠂
+⠀⠈⠀⠀⢸⣿⡂⠡⡂⠅⡐⠠⢁⠐⠠⠈⠄⡁⠄⠄⠂⠄⠈⠄⢈⠀⠄⠂⠀⠂⠠⠈⠀<a href="https://juns.framer.ai/projects" title="o · projects">⡀⠄⠐⠀⠀⠂⠠⠐⠈⠀⠀⠀</a>⢀⠀⢀⠀⢀⠐⠀⠀⠀⣼⣷⡧⠀⠐<a href="https://itisjim.github.io" title="o · my website">⠀⠂⢀⠈⠀⠀⠠⠀⠐⠀⠂⢁</a>⠈⡀⠄⠠⠁⢐⣿⢽⡂⣗⠅⠀⠂
+⢐⠢⢐⠀⣹⣿⠄⠡⠂⠅⡂⡁⢠⣴⣴⡈⠀⠄⡐⢀⠂⠄⢁⠐⠀⠄⠂⢈⠀⡁⠄⠂⠠<a href="https://juns.framer.ai/projects" title="o · projects">⠀⠠⠐⠈⠀⠐⠀⠀⠄⠐⠈⠀</a>⢀⠀⡀⠀⡀⠀⠠⠀⠀⣿⣯⡯⠀⠀<a href="https://itisjim.github.io" title="o · my website">⡀⠂⠀⠀⠀⠁⠀⠂⠈⠀⠌⠀</a>⠠⠀⠄⢁⠂⢐⣯⣟⠔⡵⠂⢈⠐
+⠐⠈⠄⠁⢼⣿⠌⠨⠨⢐⠐⠀⢼⡿⣿⡂⠈⠠⠐⠀⠄⠂⡀⠂⡁⠄⠈⠀⠄⠀⠠⠐⠀<a href="https://juns.framer.ai/projects" title="o · projects">⠈⡀⠀⠀⡈⣀⡈⡀⠀⠠⠐⠈</a>⠀⠀⠀⢀⣠⣤⣴⣄⠀⣿⣽⡯⠀⠀<a href="https://itisjim.github.io" title="o · my website">⠀⠀⣠⣴⣿⣿⣟⣿⣶⣄⡀⢈</a>⠀⠂⡁⠠⠀⢨⣷⢽⡘⣺⠀⢂⠐
+⣰⣶⡦⠀⢹⣿⠄⢅⢑⠠⠨⠀⢽⣟⣿⡂⢠⣤⣦⣦⣀⠁⠀⡂⠀⣠⣷⣧⢀⣾⣷⣷⠀<a href="https://juns.framer.ai/projects" title="o · projects">⠁⢀⣴⣿⣿⡿⣿⣿⣷⣦⠀⠀</a>⠄⠀⣴⣿⣿⡟⠟⠿⣿⣟⣾⡯⠀⠀<a href="https://itisjim.github.io" title="o · my website">⢀⣾⣿⡽⠏⠈⠈⠛⣯⣿⣧⠀</a>⢀⠁⠄⠂⠈⢰⡯⣷⢑⢽⠀⢐⠠
+⣟⣗⡿⡶⣟⣿⢀⢂⠢⢈⠌⠀⢽⣿⣻⣶⡿⠿⢻⣽⣿⣷⠀⢀⠀⣺⣿⣷⣾⠟⠟⠏⠀<a href="https://juns.framer.ai/projects" title="o · projects">⢠⣿⣻⡞⠁⠀⠀⠹⣿⢽⣧⠀</a>⠀⣸⣿⣽⠇⠀⠀⠀⠘⣿⢾⣏⠀⠀<a href="https://itisjim.github.io" title="o · my website">⣼⡿⣾⠃⠀⢀⠀⠀⢼⣷⣿⠅</a>⠀⠄⠂⠁⠄⢸⡯⣾⠸⡼⠀⢐⠠
+⣷⣳⢯⣟⡾⣟⢀⠢⠨⢐⠨⠀⢽⣷⣿⠋⠀⢀⠀⠹⣷⣿⡇⠀⠀⢾⡿⣾⠃⠀⠀⡀⠀<a href="https://juns.framer.ai/projects" title="o · projects">⣽⣿⣿⠀⠀⠄⠂⠀⣽⣟⣿⠀</a>⠀⣾⢯⣿⠀⠀⠀⡀⠠⣿⢿⣇⠀⠀<a href="https://itisjim.github.io" title="o · my website">⢾⣯⣿⠂⠀⠄⠀⠀⣺⣯⣿⠅</a>⠀⠂⡁⠌⠀⢸⡯⣗⢕⢝⠠⠐⡀
+⣗⡯⣗⣗⣿⡯⢀⠊⢌⢐⠐⠀⣻⣯⣿⠀⢈⠠⠀⢘⣿⣾⡗⠈⠀⣻⣟⣿⠀⠄⠁⡀⠀<a href="https://juns.framer.ai/projects" title="o · projects">⣿⣷⣿⠀⠐⠀⠀⢀⣿⢾⡿⠀</a>⠀⢽⣟⣿⡄⠀⠀⠀⣴⣿⣻⡇⠀⠀<a href="https://itisjim.github.io" title="o · my website">⠹⣷⣿⣧⡀⠀⡀⣼⡿⣻⠏⠀</a>⡀⢁⠠⢀⠁⢼⣟⡵⡱⣝⠀⢐⠠
+⣯⣯⣯⣷⣻⣏⠠⠡⡁⠢⠨⠀⣿⡯⣿⡀⠀⠠⢀⣼⣿⣿⠂⠠⠀⣻⣟⣿⠀⠠⠁⠠⠀<a href="https://juns.framer.ai/projects" title="o · projects">⠹⣷⣿⣧⣄⣠⣠⣿⣿⡿⠁⠀</a>⠀⠈⢿⣯⣿⢶⣶⣿⠟⣷⣿⡇⠀⠂<a href="https://itisjim.github.io" title="o · my website">⠀⠙⢷⣿⣿⣿⣿⡿⠟⠋⠀⡀</a>⠄⠄⠂⠠⠀⢺⣗⡯⡢⡗⠀⢀⠂
+⢿⣷⡻⡮⣿⣇⢂⠑⠌⠌⡂⠀⣿⣯⡿⣿⣶⣶⣿⣿⠿⠁⠀⠄⠀⣿⣿⣟⠀⠐⠈⡀⠄<a href="https://juns.framer.ai/projects" title="o · projects">⠀⠈⠟⠿⠿⠿⠿⠟⠋⠀⠀⡀</a>⠂⠀⠀⠙⠛⠛⠋⠃⠀⠉⠋⢀⠠⠀<a href="https://itisjim.github.io" title="o · my website">⠠⠀⠀⢀⠈⠀⠀⡀⠠⠀⠄⠠</a>⠐⠠⠈⠄⡀⢽⣗⡯⡢⡙⣗⡶⡄
+⠀⠉⠛⠻⣿⢮⠐⡨⠨⠨⠐⡀⠛⠟⠃⠈⠙⠛⠙⠁⠁⡀⠂⡁⠠⠈⠈⠀⠀⠄⢁⠠⠀<a href="https://juns.framer.ai/projects" title="o · projects">⡈⢀⠀⠀⠄⢀⠠⠀⠠⠀⠄⠠</a>⠀⠁⠠⠀⠄⠠⠀⡀⠄⠂⠠⠀⡀⠐<a href="https://itisjim.github.io" title="o · my website">⠀⠌⠠⠀⠄⡈⠠⠀⡐⠐⠈⠄</a>⠨⠀⠅⢂⠀⢽⣳⡏⡎⡪⡺⣜⣷
+⠀⠂⠀⢸⣟⣗⠡⢐⠡⠡⡁⡂⢐⠐⠐⡈⢐⠐⠐⡀⠅⡀⠡⠀⡂⢐⠀⡁⢂⠈⡀⠄⠂<a href="https://juns.framer.ai/projects" title="o · projects">⠠⠀⠂⡁⠄⠠⠀⢂⠐⡀⠂⡐</a>⠈⡀⢂⠐⠀⠄⠂⠀⠄⠂⠐⠀⠄⢈<a href="https://itisjim.github.io" title="o · my website">⠀⢂⠈⡀⠂⠠⢀⠁⠄⠈⠄⠡</a>⠈⠌⡐⠠⠀⣟⣗⡏⡎⡢⣫⢮⡷
+⡈⣀⠁⢸⣿⢎⢌⠢⢑⠡⢂⠂⡂⠌⡂⠔⢐⢈⠐⡀⢂⠐⡈⠄⠂⡐⢀⠂⡐⢀⠂⠄⠡<a href="https://juns.framer.ai/projects" title="o · projects">⠈⠄⠡⠀⡂⠁⠌⡀⠄⠠⠁⠄</a>⠂⡐⠀⠌⠐⠠⢈⠐⠐⢈⠠⠁⡐⢀<a href="https://itisjim.github.io" title="o · my website">⢈⠠⢀⠐⡈⡀⢂⠐⡈⠄⡁⡂</a>⠡⢐⠠⠡⠁⣾⣳⢏⢎⠎⣜⣕⣕
+⠈⠂⠀⣸⣿⣕⡐⡅⢅⢊⢢⠨⡠⠡⢐⠨⠠⠐⡀⠂⠄⠂⡀⠂⡁⠄⢐⠠⠐⠠⠈⠄⡡⠨⠠⢁⠂⠄⠅⢂⠐⡈⠄⢁⠂⠡⠀⠅⠨⠈⠐⠀⠂⡁⠄⡂⡐⡀⡂⡠⡐⡠⣐⡠⣐⣄⡢⣔⣔⣤⣢⣵⣰⢬⣦⡲⣽⡺⡧⡣⡑⣿⣯⣯
+⡾⣻⣻⡯⡷⣷⢣⠣⡡⢣⢣⢁⠢⠑⡐⠄⠅⠅⢄⢁⢂⢁⢄⢁⢄⡈⣄⢠⣁⣁⣁⣡⣠⣂⣥⣴⣴⣦⣮⣴⣦⣶⢮⡶⣞⣾⣺⡺⡾⣞⢿⡻⣟⢟⢟⡽⣫⢿⣝⣟⣟⣟⢗⡿⡽⣮⣻⣵⣳⣽⣮⣷⣽⣵⣗⣿⣮⣟⣮⣇⡧⣟⣽⠄
+⣿⢽⣺⢯⣻⣻⡶⣗⣷⣳⣷⣶⣾⡾⣶⢷⢿⣻⢾⢷⢿⣻⣻⣟⡿⣻⣟⣟⣯⣟⣟⣽⣫⣯⣗⣗⣗⣗⣷⣳⣳⣵⣿⣺⣷⣗⣷⢿⡾⡷⢿⠾⠷⠿⠻⠻⠻⠳⠻⠺⠓⠻⠛⠛⠛⡙⠋⠉⡉⠉⠉⡈⡈⠈⠁⠁⡀⢨⣷⡳⣟⣗⣿
+⠉⠛⠙⠻⠿⣽⣽⣯⢿⡾⡾⡾⡮⡿⡾⠿⠿⠾⠿⠿⠻⠻⠺⠓⠟⠛⠛⠋⠋⠋⠋⠋⠋⠉⠉⠉⢉⠉⠉⡁⠁⡁⠠⢀⠄⠠⡀⡠⠠⠀⢄⠀⡂⢐⢐⢀⠢⠐⢄⠂⡁⠪⡐⡐⠡⡀⠅⡁⠄⡑⠤⠁⡄⡑⢄⠠⠀⡈⠿⢾⢷⣵⣯
+⠀⢂⠀⠄⠀⡀⠀⡀⠄⡀⠠⠀⡀⠀⠢⠀⠀⠄⠄⡐⢐⢀⢂⠂⡂⡂⠅⠌⡨⠨⢈⠂⠅⠅⠌⠨⢐⠈⢌⢂⠡⠊⠌⢔⠁⢅⢂⢂⢅⢅⠣⡂⠄⡁⢂⢂⢊⠈⢌⠢⠂⠨⡢⡀⠡⢊⠐⡐⠄⡑⢅⠑⢌⠄⠅⢐⠐⢔⠐⡅⡪⣈⢓⡀
 </pre>
 
 <div align="center"><sub>a street sign in torino, sketched in braille characters · the letters of the sign are doors 🚪</sub></div>
